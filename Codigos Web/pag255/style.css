@@ -23,6 +23,7 @@ header {
     padding: 0;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .navbar ul li {
@@ -51,16 +52,19 @@ header {
 .gallery {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
 .book {
     margin: 10px;
     cursor: pointer;
+    flex: 1 1 200px;
+    max-width: 200px;
 }
 
 .book-img {
-    width: 200px;
+    width: 100%;
     height: auto;
     transition: transform 0.5s;
 }
@@ -94,4 +98,47 @@ header {
 
 .overlay.show {
     display: flex;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li a {
+        padding: 12px 15px;
+    }
+
+    .gallery {
+        padding: 10px;
+    }
+
+    .book {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px;
+    }
+
+    .gallery {
+        padding: 5px;
+    }
+
+    .book {
+        margin: 5px;
+        flex: 1 1 150px;
+        max-width: 150px;
+    }
+
+    .gallery-header {
+        padding: 3px 0;
+    }
 }
