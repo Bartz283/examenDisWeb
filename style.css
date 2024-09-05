@@ -142,7 +142,7 @@ nav .indicador {
     display: none;
     font-size: 24px;
     border: none;
-    background-color: #333;
+    background-color: #372c39;
     color: #fff;
     padding: 10px 15px;
     border-radius: 50%; /* Forma circular */
@@ -152,11 +152,11 @@ nav .indicador {
 }
 
 #btnScrollTop:hover {
-    background-color: #555; /* Cambio de color al pasar el mouse por encima */
+    background-color: #714b7c; /* Cambio de color al pasar el mouse por encima */
 }
 
 footer {
-    background-color: #000000; /* Fondo negro para el pie de página */
+    background-color: #23053a;
     color: #fff;
     text-align: center;
     padding: 10px 0;
